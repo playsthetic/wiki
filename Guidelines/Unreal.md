@@ -2,32 +2,32 @@
 
 The rule of thumb for our projects is to stay away from native C++ code unless absolutely necessary. In other words, make a native base class in C++ only when something cannot be done in Blueprint. Later down the road, once we start profiling, functions that are not performing well enough can be re-written in C++.
 
-For the most part, we match the conventions established by the existing Unreal Engine code. For instance, all symbols should be pascal cased, like MyFunction. The following paragraphs are about differences and added conventions.
+For the most part, we match the conventions established by the existing Unreal Engine code. For instance, all symbols should be [Pascal cased](https://en.wiktionary.org/wiki/Pascal_case), like `MyFunction`. The following paragraphs are about differences and added conventions.
 ### Acronyms
 
 Abbreviations or acronyms are a source of [debate](https://stackoverflow.com/questions/15526107/acronyms-in-camelcase) and should generally be avoided. You will find inconsistency in their capitalization all across Unreal’s codebase, that said, we need to pick sides here. We will follow the [Microsoft guidelines](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-1.1/141e06ef(v=vs.71)?redirectedfrom=MSDN) which state that, if they cannot be avoided, abbreviations with two letters such as IO (Input/Output) or 3D (Three Dimensions) should stay uppercase. Abbreviations with more letters such as FOV (Field of View) should only start with capital like Fov.
 ### Classes
 
-Do not prefix your classes with the game name. Our code is specific to each game, therefore there is no need to prefix everything with redundant information. In addition, if classes were to be reused in another project, this will save some unnecessary refactoring. In case of conflict with pre-existing engine names, be creative and find words that define your class more precisely. Classes that will have a Blueprint equivalent should be suffixed with Native such as MyClassNative.
+Do not prefix your classes with the game name. Our code is specific to each game, therefore there is no need to prefix everything with redundant information. In addition, if classes were to be reused in another project, this will save some unnecessary refactoring. In case of conflict with pre-existing engine names, be creative and find words that define your class more precisely. Classes that will have a Blueprint equivalent should be suffixed with `Native` such as `MyClassNative`.
 
 ### Boolean properties
 
-Unreal Engine has an established convention of prefixing all boolean properties with a b. This practice is often referred to as Hungarian notation and is completely unnecessary in modern typed languages like C++,  therefore we will not be adopting this convention on our projects.
+Unreal Engine has an established convention of prefixing all boolean properties with a `b`. This practice is often referred to as Hungarian notation and is completely unnecessary in modern typed languages like C++,  therefore we will not be adopting this convention on our projects.
 
 ### Functions
 
-Functions should describe an action. For this reason, they should start with a verb such as DoThis, GetThat, and SetThose.
+Functions should describe an action. For this reason, they should start with a verb such as `DoThis`, `GetThat`, and `SetThose`.
 
 ### Delegates
 
-For event dispatchers, also known as event dispatchers in Blueprint and not to be confused with custom events,  always use the On prefix such as OnSomethingHappened.
+For event dispatchers, also known as event dispatchers in Blueprint and not to be confused with custom events,  always use the On prefix such as `OnSomethingHappened`.
 
 > [!Info]
 > Delegates in code are event dispatchers in Blueprint. Custom events in Blueprint are functions in code. Finally, functions are just functions.
 
 ### Engine code changes
 
-The engine code is added as a submodule to the project’s repository. Any change to that codebase should be preceded by a // Playsthetic commented line. This is to simplify the migration process presented below.
+The engine code is added as a submodule to the project’s repository. Any change to that codebase should be preceded by a `// Playsthetic` commented line. This is to simplify the migration process presented below.
 
 ### Engine migration
 
@@ -115,10 +115,10 @@ If the teapot comprised two static meshes such as “body” and “lid”, we c
 /Game/_Kitchen/_Teapot/StaticMeshes/Lid.uasset
 ```
 
-In these examples, we make the distinction between “group” and “namespace” folders. Group folders are in plural form and are used to store similar assets. By convention, all assets of a given type should be stored in a group folder named using their literal Unreal type. For instance, a skeletal mesh would be stored in a SkeletalMeshes group folder.
+In these examples, we make the distinction between “group” and “namespace” folders. Group folders are in plural form and are used to store similar assets. By convention, all assets of a given type should be stored in a group folder named using their literal Unreal type. For instance, a skeletal mesh would be stored in a `SkeletalMeshes` group folder.
 
 > [!Note]
-> There is an exception to this convention that is shown above with /Game/_Kitchen/_Teapot/StaticMesh.uasset. In that situation, there is a single static mesh for the teapot, therefore, a group folder for the type can be bypassed as long as the asset is called like the Unreal asset type.
+> There is an exception to this convention that is shown above with `/Game/_Kitchen/_Teapot/StaticMesh.uasset`. In that situation, there is a single static mesh for the teapot, therefore, a group folder for the type can be bypassed as long as the asset is called like the Unreal asset type.
 
 Namespace folders are in singular form and are used to store related assets. These folders are always prefixed with underscores, so they can show on top when browsing assets.
 
@@ -132,11 +132,11 @@ You will also notice that the paths in our examples above won’t feature any re
 
 ### Blueprint
 
-Most point made in the code section is valid for Blueprints. Use PascalCase for properties, functions, dispatchers, components, and timelines like you would in C++. It’s tempting to give your symbols nice names with spaces when using Blueprint but ultimately it makes it inconsistent when searching inherited symbols declared in C++. It also makes refactoring easier when moving stuff between code and Blueprint.
+Most point made in the code section is valid for Blueprints. Use [Pascal case](https://en.wiktionary.org/wiki/Pascal_case) for properties, functions, dispatchers, components, and timelines like you would in C++. It’s tempting to give your symbols nice names with spaces when using Blueprint but ultimately it makes it inconsistent when searching inherited symbols declared in C++. It also makes refactoring easier when moving stuff between code and Blueprint.
 
 ### Custom events
 
-They shall always be prefixed with Event and spelled in title case such as Event Start Eating. This will look consistent with built-in events and allows finding them easily in search.
+They shall always be prefixed with `Event` and spelled in title case such as `Event Start Eating`. This will look consistent with built-in events and allows finding them easily in search.
 
 > [!Note]
 > On `BeginPlay` is the only built-in event that does not follow that convention. It could be tempting to modify the source to correct that inconsistency.
@@ -151,7 +151,7 @@ Always make your functions [pure](https://docs.unrealengine.com/4.27/en-US/Progr
 
 ### Materials
 
-Material parameters shall be using title-case such as My Float Parameter. This will make all material parameters labeled in the same style, whether they are built-in or custom.
+Material parameters shall be using title-case such as `My Float Parameter`. This will make all material parameters labeled in the same style, whether they are built-in or custom.
 
 Do not reference material directly. Instead, prefer passing through a material instance. This makes testing, setting up defaults, and swapping entire materials easier.
 
