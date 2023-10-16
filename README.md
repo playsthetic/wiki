@@ -1,11 +1,12 @@
 # wiki
 
 This repository holds the Obsidian vault that is used as our wiki. Open the folder with [Obsidian](https://obsidian.md/) to edit.
+
 ## Guidelines
 
 ### Content
 
-The wiki’s role is to always reflect true information about the studio and its project. As a result, it’s not a place for brainstorming documents and idea proposals. For these things, prefer [GitHub discussions](https://github.com/orgs/playsthetic/discussions) or our [FigJam whiteboard](https://www.figma.com/file/xULU4HdgVVC5yS1Lzz1W00/Whiteboard?node-id=0%3A1&t=ZkT53uJU4czWmYqM-1).
+The wiki's role is to always reflect true information about the studio and its project. As a result, it's not a place for brainstorming documents and idea proposals. For these things, prefer [GitHub discussions](https://github.com/orgs/playsthetic/discussions) or our [FigJam whiteboard](https://www.figma.com/file/xULU4HdgVVC5yS1Lzz1W00/Whiteboard?node-id=0%3A1&t=ZkT53uJU4czWmYqM-1).
 
 ### Pages and sections
 

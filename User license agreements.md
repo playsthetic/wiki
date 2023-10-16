@@ -6,7 +6,7 @@ User license agreements (or ULA) are a complicated subject. But basic principles
 
 ## Fonts
 
--  [Minecraftia](https://docs.google.com/document/d/e/2PACX-1vRZasbum7bxVI7iCptrs99OgFTM5iOtGCC4gGjlC-2g4F9Q4uRv_O8ktPBsmibUFs-Bbi2wAZo1Lyaa/pub) by Andrew Tyler
+- [Minecraftia](https://docs.google.com/document/d/e/2PACX-1vRZasbum7bxVI7iCptrs99OgFTM5iOtGCC4gGjlC-2g4F9Q4uRv_O8ktPBsmibUFs-Bbi2wAZo1Lyaa/pub) by Andrew Tyler
 - [Upheaval](https://blogfonts.com/upheaval-pro.font)
 
 ## Audio

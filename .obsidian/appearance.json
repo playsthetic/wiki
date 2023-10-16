@@ -1,4 +1,6 @@
 {
   "accentColor": "",
-  "theme": "system"
+  "theme": "system",
+  "showViewHeader": true,
+  "translucency": false
 }

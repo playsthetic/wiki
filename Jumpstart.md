@@ -1,19 +1,19 @@
 Welcome to Playsthetic, a game and software development studio fueled by Japan's golden era of video games and animation.
 
-On the infrastructure side, our goal is to stay super light. This means you’ll be working from your personal computer, and you won’t get yet another email inbox. Everything should integrate well with the accounts you may already have, such as [Google](https://www.google.com/), [Discord](https://discord.gg/), [Steam](https://store.steampowered.com/), and [GitHub](https://github.com/).
+On the infrastructure side, our goal is to stay super light. This means you'll be working from your personal computer, and you won't get yet another email inbox. Everything should integrate well with the accounts you may already have, such as [Google](https://www.google.com/), [Discord](https://discord.gg/), [Steam](https://store.steampowered.com/), and [GitHub](https://github.com/).
 
 ## Pre-requisites
 
-The first things you’ll need are a [GitHub account](https://github.com/join) and the Git client of your choice. For regular users we recommend [TortoiseGit](https://tortoisegit.org/download/), and for more advanced ones, [SublimeMerge](https://www.sublimemerge.com/download) or the [GitHub CLI](https://cli.github.com/). 
+The first things you'll need are a [GitHub account](https://github.com/join) and the Git client of your choice. For regular users we recommend [TortoiseGit](https://tortoisegit.org/download/), and for more advanced ones, [SublimeMerge](https://www.sublimemerge.com/download) or the [GitHub CLI](https://cli.github.com/). 
 
-> [!Warning]
+> [!Warning]  
 > SublimeMerge does not package with Git LFS. Most likely you will have to install [Git](https://git-scm.com/downloads) including LFS and set your SublimeMerge > Preferences > Advanced > Git Binary to system.|
 
 Once done, drop a message on our [Discord server](https://discord.com/channels/473635736332271626/1025410007136731206) with your username. We will invite you onboard the [GitHub organization](https://github.com/playsthetic).
 
 ## Working on a project
 
-The first step is to [clone](https://tortoisegit.org/docs/tortoisegit/tgit-dug-clone.html) the [project’s repository](https://github.com/search?q=topic%3Agame+org%3Aplaysthetic+fork%3Atrue). Each project has its own requirement featured in a `README.md` file at the root of the repository, which should give you all the necessary information to get started.
+The first step is to [clone](https://tortoisegit.org/docs/tortoisegit/tgit-dug-clone.html) the [project's repository](https://github.com/search?q=topic%3Agame+org%3Aplaysthetic+fork%3Atrue). Each project has its own requirement featured in a `README.md` file at the root of the repository, which should give you all the necessary information to get started.
 
 ## Pushing your work
 
@@ -35,8 +35,10 @@ The pull request page will give us a platform for reviewing and discussing the c
 ## Playing through Steam
 
 There will be a version of the games reflecting the `HEAD` of the `main` development [branch](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) available on Steam at all times. In order to gain access to these builds, you will have to be added to the [Steamworks](https://partner.steamgames.com/) partnership. Drop us a [message](https://discord.com/channels/473635736332271626/1025410007136731206) on our [Discord server](https://discord.gg/x2w3y8axUF) with your email so you can be invited.  
+
   
-Once onboard you should see the game like any other Steam game. Make sure to switch to the “main” beta branch following [these instructions](https://support.steampowered.com/kb_article.php?ref=9847-WHXC-7326&l=english).
+
+Once onboard you should see the game like any other Steam game. Make sure to switch to the "main" beta branch following [these instructions](https://support.steampowered.com/kb_article.php?ref=9847-WHXC-7326&l=english).
 
 ## Communication
 
@@ -56,4 +58,4 @@ For simple file exchanges, we have set up a shared [Google Drive folder](https:/
 
 ## Last words
 
-Thanks for your time going through these lines. We tried to keep it as short and simple as possible, so hopefully, it wasn’t too painful. More specific information can be found in the [guidelines section](https://drive.google.com/drive/folders/1GdGHJDPAOUAA4Ax_zKDCdo0tJJ4Hb7Nn). Hope you’ll have fun working with us.
+Thanks for your time going through these lines. We tried to keep it as short and simple as possible, so hopefully, it wasn't too painful. More specific information can be found in the [guidelines section](https://drive.google.com/drive/folders/1GdGHJDPAOUAA4Ax_zKDCdo0tJJ4Hb7Nn). Hope you'll have fun working with us.

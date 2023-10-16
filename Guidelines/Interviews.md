@@ -2,7 +2,7 @@
 
 ### Before
 
-- Read the applicant’s resume.
+- Read the applicant's resume.
 - Write your questions down.
 
 ### During
@@ -31,7 +31,7 @@
 
 ### Get yeses or nos, not maybes
 
-It’s hard for us to make hiring decisions if there are no clear definite answers to a question.
+It's hard for us to make hiring decisions if there are no clear definite answers to a question.
 
 ### Keep it short
 
@@ -39,31 +39,31 @@ Try to keep it within 60 minutes.
 
 ### Ask for concrete examples
 
-It’s not so interesting to know that things were messy at the previous company. Much more interesting to know what exactly was messy.
+It's not so interesting to know that things were messy at the previous company. Much more interesting to know what exactly was messy.
 
 ### Ask follow-up questions
 
-It’s good to know the critical thinking of the person, but even better to know their problem solving skills. Ask how they would have liked to solve the messy situation.
+It's good to know the critical thinking of the person, but even better to know their problem solving skills. Ask how they would have liked to solve the messy situation.
 
-### Don’t formulate the answer in your questions
+### Don't formulate the answer in your questions
 
-We adopted this solution to solve this problem. What do you think about it? Don’t present things this way. It’s too easy for the person to seem good by simply agreeing with you. Talk about a problem and ask them how they would solve it. Only then you can follow up with how we solved this problem and see if they can showcase critical thinking on that.
+We adopted this solution to solve this problem. What do you think about it? Don't present things this way. It's too easy for the person to seem good by simply agreeing with you. Talk about a problem and ask them how they would solve it. Only then you can follow up with how we solved this problem and see if they can showcase critical thinking on that.
 
 ### Be signal hungry and not scared to interrupt
 
-People go on tangents, and you might have got what you wanted from an answer. Don’t hesitate to be driving the interview by re-focusing or changing direction.
+People go on tangents, and you might have got what you wanted from an answer. Don't hesitate to be driving the interview by re-focusing or changing direction.
 
 ### Take notes
 
 Keep it simple for us and your future self. A list of questions and rated answers will do.
 
-### Don’t show disagreements
+### Don't show disagreements
 
-There is no need to make things uncomfortable. If we don’t feel the person works for us we will not be hiring. For this reason there is no need to put any extra effort in trying to change the person.
+There is no need to make things uncomfortable. If we don't feel the person works for us we will not be hiring. For this reason there is no need to put any extra effort in trying to change the person.
 
 ### Ask about culture
 
-It’s not the most important thing, but some common ground is important. What do they watch, play, or read?
+It's not the most important thing, but some common ground is important. What do they watch, play, or read?
 
 ## Answer these questions
 
