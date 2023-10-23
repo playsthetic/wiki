@@ -11,3 +11,7 @@ The wiki's role is to always reflect true information about the studio and its p
 ### Pages and sections
 
 Page and sections should be sentenced cased without periods, such as `This section`.
+
+## Publishing
+
+In order to publish, use the `Publish changes...` command in Obsidian. You won't be able to do so until you've been added as a collaborator via email.
