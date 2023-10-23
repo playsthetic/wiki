@@ -1,23 +1,20 @@
 Welcome to Playsthetic, a game and software development studio fueled by Japan's golden era of video games and animation.
 
-On the infrastructure side, our goal is to stay super light. This means you'll be working from your personal computer, and you won't get yet another email inbox. Everything should integrate well with the accounts you may already have, such as [Google](https://www.google.com/), [Discord](https://discord.gg/), [Steam](https://store.steampowered.com/), and [GitHub](https://github.com/).
-
 ## Pre-requisites
 
-If you haven't done that already, the first things you'll need to do is join our Discord server using [this invite link](https://discord.gg/x2w3y8axUF).
+The first thing you'll need is a [GitHub account](https://github.com/join) with access to our [GitHub organization](https://github.com/playsthetic). You should have received an email invitation for that, but if you haven't, connect to our [Discord server](https://discord.gg/x2w3y8axUF) and tell us about it [here](https://discord.com/channels/473635736332271626/1025410007136731206) .
 
-Next, you'll need a [GitHub account](https://github.com/join) and the Git client of your choice. For regular users, we recommend [TortoiseGit](https://tortoisegit.org/download/), and for the more advanced ones, [SublimeMerge](https://www.sublimemerge.com/download) or the [GitHub CLI](https://cli.github.com/). 
+Next, you'll need the Git client of your choice. For regular users, we recommend [TortoiseGit](https://tortoisegit.org/download/), and for the more advanced ones, [SublimeMerge](https://www.sublimemerge.com/download) or the [GitHub CLI](https://cli.github.com/)
 
 > [!Warning]  
 > If you decide to go with [SublimeMerge](https://www.sublimemerge.com/download), be aware that it does not package with Git LFS. Most likely you will have to install [Git](https://git-scm.com/downloads) including LFS and set your **SublimeMerge > Preferences > Advanced > Git Binary** to `system`.|
-
-Once done, drop us a message [here](https://discord.com/channels/473635736332271626/1025410007136731206) with your GitHub username, so we can invite you onboard the [GitHub organization](https://github.com/playsthetic). This will give you access to all our repositories.
 
 ## Working on a project
 
 Working on a project is as simple as [cloning](https://tortoisegit.org/docs/tortoisegit/tgit-dug-clone.html) the [project's repository](https://github.com/search?q=topic%3Agame+org%3Aplaysthetic+fork%3Atrue) on your local machine.
 
-Each project has its own requirements featured in a `README.md` file at the root of the repository. Make sure you read that before getting started.
+> [!Info]  
+> Each project has its own requirements featured in a `README.md` file at the root of the repository. Make sure you read that before getting started.
 
 ## Pushing your work
 
@@ -54,10 +51,14 @@ In order to keep track of ideas and questions related to the studio, we are leve
 
 We like to keep it super light on the social side and let things happen naturally. Use our curated [Google map](https://www.google.com/maps/d/viewer?mid=1nNltV1T2IXVL7NmpxB28gjIyVYfK4slX&usp=sharing) to share cool spots on the planet.
 
+## Events
+
+We register our studio events in a dedicated [Google Calendar](https://calendar.google.com). If you have not been invited, [let us know](https://discord.com/channels/473635736332271626/1025410007136731206).
+
 ## File exchange
 
 For files that are not meant to be tracked on Git and are too big for Discord, we have set up a shared [Google Drive folder](https://drive.google.com/drive/folders/102jWVDGEzgV360VGnHh-r6Yl77EviAQu?usp=sharing) to which you will need to request access.
 
 ## Last words
 
-Thanks for your time going through these lines. We tried to keep it as short and simple as possible, so hopefully, it wasn't too painful. More specific information can be found in the "Guidelines" section. We hope you'll have fun working with us.
+Thanks for your time going through these lines. We tried things short and sweet, so hopefully this wasn't too painful. For more specific information about workflows, make sure to check the relevant pages in "Guidelines" section. We hope you'll have fun working with us.

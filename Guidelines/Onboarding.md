@@ -1,0 +1,1 @@
+Onboarding someone is relatively simple. Invite them to our Discord server using [this invitation link](https://discord.gg/x2w3y8axUF) and to our [GitHub organization](https://github.com/orgs/playsthetic/people). Once they jointed on Discord, don't forget to give them the `Staff`role. That will give them all the information needed to connect to this wiki.
