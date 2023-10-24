@@ -14,7 +14,8 @@
 
 - 📖[Becoming a Better Programmer](https://www.oreilly.com/library/view/becoming-a-better/9781491905562)  
 - 📖 [Game Programming Patterns](https://gameprogrammingpatterns.com/)  
-- 📺 [The Cherno - C++ Series](https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)🛠️ [Coding Font](https://www.codingfont.com/)
+- 📺 [The Cherno - C++ Series](https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)
+- 🛠️ [Coding Font](https://www.codingfont.com/)
 
 ## Graphics programming
 
@@ -31,14 +32,17 @@
 
 - 📖 [Game Feel](http://www.game-feel.com/)  
 - 📖 [Frame Data Basics](https://youtu.be/sbyUM5aWKpk)  
-- 📺 [What Makes a Good Combat System](https://youtu.be/8X4fx-YncqA)🌎 [Laws of UX](https://lawsofux.com/)📺 [The Making of Streets of Rage 2](https://youtu.be/5Z7liHTgnw4)
+- 📺 [What Makes a Good Combat System](https://youtu.be/8X4fx-YncqA)
+- 🌎 [Laws of UX](https://lawsofux.com/)
+- 📺 [The Making of Streets of Rage 2](https://youtu.be/5Z7liHTgnw4)
 
 ## Unreal Engine
 
 - 📺 [Profiling and Optimization in UE4](https://youtu.be/EbXakIuZPFo)  
 - 📺 [Alex Forsythe Unreal Engine Series](https://www.youtube.com/playlist?list=PLgIBMlWm501pi21I23ad4cwpJBGNuKi_h)  
 - 📺 [Math for Artists](https://youtu.be/KrghZBIIsXc)  
-- 📺 [How To Lower Your Unreal Engine Project File Size](https://youtu.be/gmYvSPj8rmI)🌎 [Render Dependency Graph 101](https://epicgames.ent.box.com/s/ul1h44ozs0t2850ug0hrohlzm53kxwrz)  
+- 📺 [How To Lower Your Unreal Engine Project File Size](https://youtu.be/gmYvSPj8rmI)
+- 🌎 [Render Dependency Graph 101](https://epicgames.ent.box.com/s/ul1h44ozs0t2850ug0hrohlzm53kxwrz)  
 - 🌎 [Unreal Engine Render Pipeline Overview](https://www.figma.com/file/PKSa2aAmFu4pMF9PSoCtkm)
 
 ## Coworking
