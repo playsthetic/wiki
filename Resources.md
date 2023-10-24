@@ -58,3 +58,7 @@
 ## DevOps
 
 - 📺 [Workflow on Fornite](https://youtu.be/p4RcDpGQ_tI)
+
+## Fundraising
+
+- 🌎 [Pitch Decks](https://heyglitch.notion.site/Pitch-Decks-f56e38c13fe6417f8379859e74367e1a)
