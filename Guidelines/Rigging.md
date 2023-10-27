@@ -1,6 +1,9 @@
 ## Introduction
 
-The rigging process is broken down into two parts. The first part happens in Blender and consists of assembling meshes and bones together via weights. The second part is [the creation of a](https://wiki.playsthetic.com/app/page/10V4VCLOP9fO-zpjstysVfgn41LTjSqWx3XAdlW2uo1A) control rig directly in Unreal, feeding from the armature exported from Blender as FBX.
+The rigging process is broken down into two parts. The first part happens in Blender and consists of assembling meshes and bones together via weights. The second part is the creation of a control rig directly in Unreal, feeding from the armature exported from Blender as FBX.
+
+> [!Note]  
+> Since Unity does not have anything comparable to Control Rig in Unreal, we will be using [Cascadeur](https://cascadeur.com/) for animation as it provides a nice auto-rigging system.
 
 ## Yellow
 
@@ -9,6 +12,9 @@ Yellow is our custom Blender add-on that will help facilitate the rigging workfl
 ## Units
 
 In order to work on skeletal meshes in Blender that will come in at the right scale into Unreal and Unity, you need to [set your Blender unit scale](https://docs.blender.org/manual/en/latest/scene_layout/scene/properties.html#units) to `0.01`. Blender does not behave ideally at this scale so I am always curious to hear how we can fix this in the future. You can keep an eye on [this thread](https://blender.stackexchange.com/questions/202805) if you are interested to know more.
+
+> [!Warning]  
+> When switching Blender's `Unit Scale`, it will alter the `Clip Start` and `Clip End` in your `View` panel. You'll want to reset them back to `0.01` and `1000`.
 
 ## Hierarchy
 
