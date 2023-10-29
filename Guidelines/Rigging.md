@@ -34,6 +34,9 @@ All bones should be pointing Y forward which is a convention dictated by Blender
 
 Bones that are used as floating locators should be pointing  up. This is not so much something required by Unreal, but it seems to import as a better default in other applications like Cascadeur and Unity.
 
+> [!Warning]  
+> In Unity objects exported from Blender will look correct but come in with a `X` rotation of `-90`. If this issues needs to be addressed, the object in Blender needs to look correct in context while having `X` rotation offset of `90`.
+
 ## Naming convention
 
 Following a strict naming convention is a great base to facilitate automation. This section will take you with how and why we name things a certain way.
