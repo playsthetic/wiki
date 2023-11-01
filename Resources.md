@@ -27,6 +27,7 @@
 - 📺 [Computer-assisted Animation of Line and Paint](https://youtu.be/84rl-T2yIls)  
 - 📺 [Guilty Gear Xrd's Art Styles at GDC 2015](https://youtu.be/84rl-T2yIls)  
 - 🌎 [The Book of Shaders](https://thebookofshaders.com/)
+- 🌎 [Creating a Pixel Art Scene in Realtime 3D](https://imgur.com/gallery/qwhbHQq)
 
 ## Game design
 

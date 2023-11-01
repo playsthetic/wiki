@@ -61,4 +61,4 @@ For files that are not meant to be tracked on Git and are too big for Discord, w
 
 ## Last words
 
-Thanks for your time going through these lines. We tried things short and sweet, so hopefully this wasn't too painful. For more specific information about workflows, make sure to check the relevant pages in "Guidelines" section. We hope you'll have fun working with us.
+Thanks for taking the time to go through these lines. We tried to keep things short, but there was quite a bit to go through. Hopefully this wasn't too painful. For more specific information about workflows, make sure to check the "Guidelines" section. We hope you'll have fun working with us.
