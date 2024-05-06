@@ -6,18 +6,11 @@ For the most part, we match the conventions established by the existing Unreal E
 
 ### Acronyms
 
-Abbreviations or acronyms are a source of [debate](https://stackoverflow.com/questions/15526107/acronyms-in-camelcase) and should generally be avoided. You will find inconsistency in their capitalization all across Unreal's codebase, that said, we will be picking a side. The first character of the acronym will always be uppercase, while subsequent will be lowercase, such as "two dimensions" is `2d` and "field of view" is `Fov`.
-
-> [!Info]  
-This differs from the [Microsoft guidelines](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-1.1/141e06ef(v=vs.71)?redirectedfrom=MSDN) that make an exception of two letters acronyms such as `IO` or `AI`.
+Abbreviations or acronyms are a source of [debate](https://stackoverflow.com/questions/15526107/acronyms-in-camelcase) and should generally be avoided. You will find inconsistency in their capitalization across Unreal's codebase, with names like `FGuid` or `SetFOV`. For our sake, we'll be sticking to the [Microsoft guidelines](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-1.1/141e06ef(v=vs.71)?redirectedfrom=MSDN) which dictates to use uppercase for two characters acronyms, such as `2D` for "two dimensions", and Pascal case for the rest, such as `Fov` for "field of view".
 
 ### Classes
 
 Do not prefix your classes with the game name. Our code is specifically written for the game, therefore there is no need to prefix everything with redundant information. In addition, if classes were to be reused in another project, this will save some unnecessary refactoring. In case of conflict with pre-existing engine names, be creative and find words that define your class more precisely. All native our C++ code classes should be suffixed with `_C` such as `APlayerPawn_C`.
-
-### Boolean properties
-
-Unreal Engine has an established convention of prefixing all boolean properties with a `b`. This practice is often referred to as Hungarian notation and is completely unnecessary in modern typed languages like C++,  therefore we will not be adopting this convention on our projects.
 
 ### Functions
 
@@ -34,7 +27,7 @@ For event dispatchers, also known as event dispatchers in Blueprint and not to b
 
 The engine code is added as a submodule to the project's repository. Any change to that codebase should be preceded by a `// Playsthetic` commented line. This is to simplify the migration process presented below.
 
-## Script
+## Scripts
 
 For scripting, we rely on an open source project called [Unreal Engine AngelScript](https://angelscript.hazelight.se/). Scripting is where we'll be storing most of the project's code logic and shares most of the coding standards established in C++ code.
 
@@ -84,27 +77,7 @@ This second example still follows the listed conventions. Take note that `Teapot
 
 ### Blueprints
 
-Blueprints should not feature any logic unless absolutely necessary. Most of the logic should live in script or native code, leaving Blueprint solely for deriving class defaults.
-
-If Blueprint had to be used, most points made in the code section would apply. Use [Pascal case](https://en.wiktionary.org/wiki/Pascal_case) for properties, functions, dispatchers, components, and timelines like you would in C++.
-
-> [!Note]  
-> It's tempting to give your symbols nice names with spaces when using Blueprint, but ultimately it makes it inconsistent when searching inherited symbols declared in C++. It also makes refactoring easier when moving stuff between code and Blueprint.
-
-#### Custom events
-
-They shall always be prefixed with `Event` and spelled in title case such as `Event Start Eating`. This will look consistent with built-in events and allows finding them easily in search.
-
-> [!Note]  
-> On `BeginPlay` is the only built-in event that does not follow that convention. It could be tempting to modify the source to correct that inconsistency.
-
-#### Timelines
-
-Timelines should always end with the word Timeline as it makes it easy to find them in the search.
-
-#### Functions
-
-Always make your functions [pure](https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/Blueprints/UserGuide/Functions/) when possible. In other words for getters that do not modify the state.
+Blueprints should not feature any logic unless absolutely necessary. Most of the logic should live in script or native code, leaving Blueprint solely for deriving class defaults and manipulating components.
 
 ### Materials
 
