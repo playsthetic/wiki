@@ -6,11 +6,11 @@ For the most part, we match the conventions established by the existing Unreal E
 
 ### Acronyms
 
-Abbreviations or acronyms are a source of [debate](https://stackoverflow.com/questions/15526107/acronyms-in-camelcase) and should generally be avoided. You will find inconsistency in their capitalization all across Unreal's codebase, that said, we need to pick sides here. We will follow the [Microsoft guidelines](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-1.1/141e06ef(v=vs.71)?redirectedfrom=MSDN) which state that, if they cannot be avoided, abbreviations with two letters such as IO (Input/Output) or 3D (Three Dimensions) should stay uppercase. Abbreviations with more letters such as FOV (Field of View) should only start with capital like `Fov`.
+Abbreviations or acronyms are a source of [debate](https://stackoverflow.com/questions/15526107/acronyms-in-camelcase) and should generally be avoided. You will find inconsistency in their capitalization all across Unreal's codebase, that said, we need to pick sides here. We will not follow the [Microsoft guidelines](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-1.1/141e06ef(v=vs.71)?redirectedfrom=MSDN) and always uppercase the first character while lowercasing any subsequence ones, thus regardless of the acronym's length. "2D" (two dimensions) will become `2d`, and "FOV" (field of view) will become `Fov`.
 
 ### Classes
 
-Do not prefix your classes with the game name. Our code is specific to each game, therefore there is no need to prefix everything with redundant information. In addition, if classes were to be reused in another project, this will save some unnecessary refactoring. In case of conflict with pre-existing engine names, be creative and find words that define your class more precisely. All native C++ code classes should be suffixed with `Cpp` such as `APlayerPawnCpp`.
+Do not prefix your classes with the game name. Our code is specific to each game, therefore there is no need to prefix everything with redundant information. In addition, if classes were to be reused in another project, this will save some unnecessary refactoring. In case of conflict with pre-existing engine names, be creative and find words that define your class more precisely. All native C++ code classes should be suffixed with `C` such as `APlayerPawnC`.
 
 ### Boolean properties
 
@@ -95,7 +95,7 @@ For scripting, we rely on an open source project called [Unreal Engine AngelScri
 
 ### Classes
 
-All AngelScript classes will be suffixed with the letter `AS` such as `APlayerPawnAS`.
+All AngelScript classes will be suffixed with the letter `A` such as `APlayerPawnA`.
 
 ## Assets
 
@@ -137,9 +137,9 @@ This second example still follows all the conventions mentioned above. Take note
 > [!Note]  
 > Even though we are putting some effort into having a logical and organized folder structure, we do recommend to not browse your assets manually. Instead, make use of the "Open Asset" feature (Ctrl + P) and its brilliant support for lazy typing. It will search not only names but also paths and types.
 
-### Blueprint
+### Blueprints
 
-Blueprint should not feature any logic unless absolutely necessary. Most logic should live in script or native code and Blueprint should solely be used to derive classes defaults value.
+Blueprints should not feature any logic unless absolutely necessary. Most logic should live in script or native code and Blueprint should solely be used to derive classes defaults value.
 
 In the logic had to be implemented in Blueprint, most points made in the code section would apply. Use [Pascal case](https://en.wiktionary.org/wiki/Pascal_case) for properties, functions, dispatchers, components, and timelines like you would in C++. It's tempting to give your symbols nice names with spaces when using Blueprint, but ultimately it makes it inconsistent when searching inherited symbols declared in C++. It also makes refactoring easier when moving stuff between code and Blueprint.
 
