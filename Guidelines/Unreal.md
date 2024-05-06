@@ -13,7 +13,7 @@ This differs from the [Microsoft guidelines](https://docs.microsoft.com/en-us/pr
 
 ### Classes
 
-Do not prefix your classes with the game name. The game code is for the game only, therefore there is no need to prefix everything with redundant information. In addition, if classes were to be copied in another project, it will save some unnecessary refactoring. In case of conflict with pre-existing engine names, be creative and find words that define your class more precisely. All native C++ code classes should be suffixed with `C` such as `APlayerPawnC`.
+Do not prefix your classes with the game name. Our code is specifically written for the game, therefore there is no need to prefix everything with redundant information. In addition, if classes were to be reused in another project, this will save some unnecessary refactoring. In case of conflict with pre-existing engine names, be creative and find words that define your class more precisely. All native our C++ code classes should be suffixed with `_C` such as `APlayerPawn_C`.
 
 ### Boolean properties
 
@@ -40,7 +40,7 @@ For scripting, we rely on an open source project called [Unreal Engine AngelScri
 
 ### Classes
 
-All AngelScript classes will be suffixed with the letter `A` such as `APlayerPawnA`.
+All AngelScript classes will be suffixed with the letter `_AS` such as `APlayerPawn_AS`.
 
 ## Assets
 
