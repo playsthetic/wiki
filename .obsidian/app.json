@@ -4,6 +4,7 @@
   "showLineNumber": false,
   "showInlineTitle": true,
   "spellcheckDictionary": [
-    "AngelScript"
+    "AngelScript",
+    "Blueprint"
   ]
 }

@@ -1,16 +1,16 @@
 ## Code
 
-The rule of thumb for our projects is to stay away from native C++ code unless absolutely necessary. In other words, make a native base class in C++ only when something cannot be done in script or Blueprint. Later down the road, once we start profiling, functions that are not performing well enough can be re-written in C++.
+The rule of thumb for our projects is to stay away from native C++ code unless absolutely necessary. In other words, make a native base class in C++ only when something cannot be done in script or Blueprint. When we start profiling, functions that are not performing well enough can be re-written in C++.
 
 For the most part, we match the conventions established by the existing Unreal Engine code. For instance, all symbols should be [Pascal cased](https://en.wiktionary.org/wiki/Pascal_case), like `MyFunction`. The following paragraphs are about differences and added conventions.
 
 ### Acronyms
 
-Abbreviations or acronyms are a source of [debate](https://stackoverflow.com/questions/15526107/acronyms-in-camelcase) and should generally be avoided. You will find inconsistency in their capitalization across Unreal's codebase, with names like `FGuid` or `SetFOV`. For our sake, we'll be sticking to the [Microsoft guidelines](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-1.1/141e06ef(v=vs.71)?redirectedfrom=MSDN) which dictates to use uppercase for two characters acronyms, such as `2D` for "two dimensions", and Pascal case for the rest, such as `Fov` for "field of view".
+Abbreviations or acronyms are a source of [debate](https://stackoverflow.com/questions/15526107/acronyms-in-camelcase) and should generally be avoided. You will find inconsistency in their capitalization across Unreal's codebase, with names like `FGuid` or `SetFOV`. For our sake, we'll be sticking to the [Microsoft guidelines](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-1.1/141e06ef(v=vs.71)?redirectedfrom=MSDN) which dictates to use uppercase for two characters acronyms, such as `2D` for "two dimensions", and [Pascal case](https://en.wiktionary.org/wiki/Pascal_case) for the rest, such as `Fov` for "field of view".
 
 ### Classes
 
-Do not prefix your classes with the game name. Our code is specifically written for the game, therefore there is no need to prefix everything with redundant information. In addition, if classes were to be reused in another project, this will save some unnecessary refactoring. In case of conflict with pre-existing engine names, be creative and find words that define your class more precisely. All native our C++ code classes should be suffixed with `_C` such as `APlayerPawn_C`.
+Do not prefix your classes with the game name. Our code is specifically written for the game, therefore there is no need to prefix everything with redundant information. If classes were to be reused in another project, this will save some unnecessary refactoring. In case of conflict with pre-existing engine names, be creative and find words that define your class more precisely. All native our C++ code classes should be suffixed with `_C` such as `APlayerPawn_C`.
 
 ### Functions
 
@@ -18,22 +18,18 @@ Functions should describe an action. For this reason, they should start with a v
 
 ### Delegates
 
-For event dispatchers, also known as event dispatchers in Blueprint and not to be confused with custom events, always use the On prefix such as `OnSomethingHappened`.
+For event dispatchers, also known as event dispatchers in blueprints and not to be confused with custom events, always use the `On` prefix such as `OnSomethingHappened`.
 
 > [!Info]  
 > Delegates in code are event dispatchers in Blueprint. Custom events in Blueprint are functions in code. Finally, functions are just functions.
 
 ### Engine code changes
 
-The engine code is added as a submodule to the project's repository. Any change to that codebase should be preceded by a `// Playsthetic` commented line. This is to simplify the migration process presented below.
+The engine code is added as a submodule to the project's repository. Any change to that codebase should be preceded by a `// Playsthetic` commented line. This is to simplify the [[Unreal Engine migration|migration process]].
 
 ## Scripts
 
-For scripting, we rely on an open source project called [Unreal Engine AngelScript](https://angelscript.hazelight.se/). Scripting is where we'll be storing most of the project's code logic and shares most of the coding standards established in C++ code.
-
-### Classes
-
-All AngelScript classes will be suffixed with the letter `_AS` such as `APlayerPawn_AS`.
+For scripting, we rely on an open source project called [Unreal Engine AngelScript](https://angelscript.hazelight.se/). Scripting is where we'll be storing most of the project's code logic and shares about the same coding standards established for C++. All AngelScript classes will be suffixed with the letter `_AS` such as `APlayerPawn_AS`.
 
 ## Assets
 
@@ -102,7 +98,7 @@ Unless salvaged from somewhere else, always create your textures in 4096 and exp
 
 ### Niagara
 
-Niagara system parameters shall be [Pascal cased](https://en.wiktionary.org/wiki/Pascal_case) such as `MyFloatParameter`. This will make all attributes appear the same way whether they are built-in or custom.
+Niagara system parameters shall be [Pascal cased](https://en.wiktionary.org/wiki/Pascal_case) such as `MyFloatParameter`. This will make all attributes appear the same way, whether they are built-in or custom.
 
 Stay away from using material dynamic parameters in favor of renderer material bindings whenever possible. Currently, material bindings cannot be used for per-particle attributes.
 
@@ -114,14 +110,14 @@ Do not reference material directly. Instead, prefer passing through a material i
 
 ### Material layers
 
-Material layer parameter groups should all be prefixed with the name of thelayer,r such as a `Snow` layer parameter group called `Snow Textures`. 
+Material layer parameter groups should all be prefixed with the name of the layer such as a `Snow` layer parameter group called `Snow Textures`. 
 
 > [!Note]  
 > This is because there is currently a bug in Unreal that will hide groups with the same name in the material details panel.
 
 ### Material functions
 
-Limit the use of material functions to abstract reusable blocks of functionality. Do not nest material parameters in functions, only expose inputs that can be fed to the function by its client. If you are tempted to break these conventions, it probably means you want to start looking into material layers.
+Limit the use of material functions to abstract reusable blocks of functionality. Do not nest material parameters in functions, only expose inputs that can be fed to the function by its client. If you are tempted to break these conventions, it probably means you want to start looking into material layers. Material function inputs should be title cased, such as `My Float Input`.
 
 ### Textures
 
