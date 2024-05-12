@@ -36,7 +36,7 @@ For scripting, we rely on an open source project called [Unreal Engine AngelScri
 Names should be [Pascal cased](https://en.wiktionary.org/wiki/Pascal_case), such as a wooden crate would be named `WoodenCrate`.
 
 > [!Note]  
-> Suppressing the presence of underscores solves the eternal question of when and why they should be used. Below you will see that we reserve underscores for a specific use.
+> Suppressing the presence of underscores solves the eternal question of when and why they should be used.
 
 Do not prefix or suffix assets with their type abbreviation, such as `SK` for skeletal meshes.
 
@@ -46,24 +46,24 @@ Do not prefix or suffix assets with their type abbreviation, such as `SK` for sk
 A teapot static mesh for a kitchen could be stored in one of these two ways:
 
 ```
-/Game/_Kitchen/StaticMeshes/Kitchen_Teapot.uasset
-/Game/_Kitchen/_Teapot/Teapot_StaticMesh.uasset
+/Game/_Kitchen/StaticMeshes/KitchenTeapot.uasset
+/Game/_Kitchen/_Teapot/TeapotStaticMesh.uasset
 ```
 
 This example reveals a few important aspects of our naming convention. First off, we can see two types of folder.
 
-Namespace folders such as `_Kitchen` are in singular form and used to store related assets. These folders are always prefixed with underscores, so they can show on top when browsing assets. The namespace is then reflected in the asset name separated by underscores as in `Kitchen_Teapot.uasset`.
+Namespace folders such as `_Kitchen` are in singular form and used to store related assets. These folders are always prefixed with underscores, so they can show on top when browsing assets. The last namespace is then reflected in the asset name as in `KitchenTeapot.uasset`.
 
-Grouping folders such as `SkeletalMeshes` are in plural form and are used to store assets of the same type. Generally, we are using the literal Unreal type to name these folders. Assets don't necessary have to live in a grouping folder, in which case they need to be suffixed with their type. That's the case of `Teapot_StaticMesh.uasset` on the second line.
+Grouping folders such as `SkeletalMeshes` are in plural form and are used to store assets of the same type. Generally, we are using the literal Unreal type to name these folders. Assets don't necessary have to live in a grouping folder, in which case they need to be suffixed with their type. That's the case of `TeapotStaticMesh.uasset` on the second line.
 
 If the teapot comprised two static meshes parts, we could consider one of these two configurations:
 
 ```
-/Game/_Kitchen/StaticMeshes/Kitchen_Teapot_Body.uasset  
-/Game/_Kitchen/StaticMeshes/Kitchen_Teapot_Lid.uasset  
+/Game/_Kitchen/StaticMeshes/KitchenTeapotBody.uasset  
+/Game/_Kitchen/StaticMeshes/KitchenTeapotLid.uasset  
   
-/Game/_Kitchen/_Teapot/StaticMeshes/Kitchen_TeapotBody.uasset  
-/Game/_Kitchen/_Teapot/StaticMeshes/Kitchen_TeapotLid.uasset
+/Game/_Kitchen/_Teapot/StaticMeshes/KitchenTeapotBody.uasset  
+/Game/_Kitchen/_Teapot/StaticMeshes/KitchenTeapotLid.uasset
 ```
 
 This second example still follows the listed conventions. Take note that `TeapotBody` is Pascal cased on two last lines because `Teapot` is not a namespace in that context.
