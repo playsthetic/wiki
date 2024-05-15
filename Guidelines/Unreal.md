@@ -73,7 +73,7 @@ This second example still follows the listed conventions. Take note that `Teapot
 
 ### Blueprints
 
-Blueprints should not feature any logic unless absolutely necessary. Most of the logic should live in script or native code, leaving Blueprint solely for deriving class defaults and manipulating components.
+Blueprints should not feature any logic unless absolutely necessary. Most of the logic should live in script or native code, leaving Blueprint solely for deriving class defaults and manipulating pre-existing components.
 
 ### Materials
 
@@ -110,7 +110,7 @@ Do not reference material directly. Instead, prefer passing through a material i
 
 ### Material layers
 
-Material layer parameter groups should all be prefixed with the name of the layer such as a `Snow` layer parameter group called `Snow Textures`. 
+Material layer parameter groups should all be prefixed with the name of the layer, such as a `Snow` layer parameter group called `Snow Textures`. 
 
 > [!Note]  
 > This is because there is currently a bug in Unreal that will hide groups with the same name in the material details panel.
@@ -121,10 +121,18 @@ Limit the use of material functions to abstract reusable blocks of functionality
 
 ### Textures
 
-Unless salvaged from somewhere else, always create your textures in 4096 and export them to PNG. In the editor, make use of the Maximum Texture Size property to define what should compute at runtime. Trying to push data destruction as late as possible in the pipeline will offer great flexibility.
+Unless salvaged from somewhere else, always create your textures in `4096` and export them to `.png`. In the editor, make use of the `Maximum Texture Size` property to define what should compute at runtime. Trying to push data destruction as late as possible in the pipeline will offer great flexibility.
 
-### Niagara
+### Niagara systems
 
 Niagara system parameters shall be [Pascal cased](https://en.wiktionary.org/wiki/Pascal_case) such as `MyFloatParameter`. This will make all attributes appear the same way whether they are built-in or custom.
 
 Stay away from using material dynamic parameters in favor of renderer material bindings whenever possible. Currently, material bindings cannot be used for per-particle attributes.
+
+### Animation Blueprints
+
+Coming soon…
+
+### Control rigs
+
+Coming soon…
