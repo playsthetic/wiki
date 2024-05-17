@@ -10,7 +10,7 @@ Abbreviations or acronyms are a source of [debate](https://stackoverflow.com/que
 
 ### Classes
 
-Do not prefix your classes with the game name. Our code is specifically written for the game, therefore there is no need to prefix everything with redundant information. If classes were to be reused in another project, this will save some unnecessary refactoring. In case of conflict with pre-existing engine names, be creative and find words that define your class more precisely. All native our C++ code classes should be suffixed with `_C` such as `APlayerPawn_C`.
+Do not prefix your classes with the game name. Our code is specifically written for the game, therefore there is no need to prefix everything with redundant information. If classes were to be reused in another project, this will save some unnecessary refactoring. In case of conflict with pre-existing engine names, be creative and find words that define your classes more precisely.
 
 ### Functions
 
