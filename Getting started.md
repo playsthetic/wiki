@@ -2,7 +2,7 @@ Welcome to Playsthetic, a game and software development studio fueled by Japan's
 
 ## Pre-requisites
 
-The first thing you'll need is a [GitHub account](https://github.com/join) with access to our [GitHub organization](https://github.com/playsthetic). You should have received an email invitation for that, but if you haven't, connect to our [Discord server](https://discord.gg/x2w3y8axUF) and tell us about it [here](https://discord.com/channels/473635736332271626/1025410007136731206) .
+The first thing you'll need is a [GitHub account](https://github.com/join) and access to our [GitHub organization](https://github.com/playsthetic). You should have received an email invitation for that, but if you haven't, tell us about it on [Discord](https://discord.com/channels/473635736332271626/1025410007136731206) .
 
 Next, you'll need the Git client of your choice. For regular users, we recommend [TortoiseGit](https://tortoisegit.org/download/), and for the more advanced ones, [SublimeMerge](https://www.sublimemerge.com/download) or the [GitHub CLI](https://cli.github.com/)
 
