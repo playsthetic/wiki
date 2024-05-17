@@ -20,7 +20,7 @@ Working on a project is as simple as [cloning](https://tortoisegit.org/docs/tort
 
 [Pull requests](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) are the mechanism we use to submit changes and review them before they can make it into the game. The workflow goes as follows:
 
-1. [Target an issue](https://github.com/playsthetic/punch/issues) you want to be working on.
+1. [Target a project issue](https://github.com/orgs/playsthetic/projects) you want to be working on.
 2. [Create a branch](https://tortoisegit.org/docs/tortoisegit/tgit-dug-branchtag.html#tgit-dug-branch-1) named something like `my-new-feature`.
 3. Make modifications until you are happy.
 4. [Push your changes](https://tortoisegit.org/docs/tortoisegit/tgit-dug-push.html) to the server.
