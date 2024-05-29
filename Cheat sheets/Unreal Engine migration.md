@@ -11,7 +11,7 @@ gh repo clone EpicGames/UnrealEngine
 Now `cd` to the `Engine` folder and generate a patch using:
 
 ```
-git diff current-version-tag new-version-tag -- > patch.diff
+git diff <current-version-tag> <new-version-tag> -- > patch.diff
 ```
 
 Remove all instances of `Engine/` using the following PowerShell command:
@@ -46,10 +46,15 @@ For major updates, the patch method just won't work, as there are simply too man
 4. Merge the newer and older `.gitignore`.
 5. Delete the `Binaries`, `Build`, `Config`, `Plugins`, `Programs`, `Shaders`, `Source` folders.
 6. Copy the newer version of these folders into `unreal-engine`.
-7. Run `git add --force .`.
+7. Run `git add --force .`. This will make sure to stage all the copied files, even if ignored.
 8. Run `git commit -m "Update to X.X.X"`.
-9. Run `git rm -r --cached .`. This will delete the ignored files.
-10. Run `git add .`. This will stage the deletion.
-11. Run `git commit -m "Remove unnecessary files"`.
-12. Cherry pick and resolve previous custom change commits.
-13. Run `git push`.
+
+> [!Note]  
+> Optionally you delete anything that should be ignored using the following commands.
+   > 
+> 1. Run `git rm -r --cached .`. This will delete the ignored files.  
+> 2. Run `git add .`. This will stage the deletion.  
+> 3. Run `git commit -m "Remove unnecessary files"`.
+
+ 1. Cherry pick and resolve previous custom change commits.
+ 2. Run `git push`.
