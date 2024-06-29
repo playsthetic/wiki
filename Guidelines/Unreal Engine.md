@@ -131,8 +131,19 @@ Stay away from using material dynamic parameters in favor of renderer material b
 
 ### Animation Blueprints
 
-Coming soon…
+More coming when they are being used more intensively.
+
+## Static meshes
+
+Modeling will happen in Blender with models facing `-Y`. When imported in the editor, static meshes should end up facing `Y`.
+
+> [!Note]  
+> It's worth mentioning that the `Right` view should be used to see a model from the front in the editor. Not sure how much this due to legacy shananigans, but for compatibility we will obey by it.
+
+## Skeletal meshes
+
+All skeletal meshes are created in the editor using `Convert to Skeletal Mesh`. In terms of bone naming convention, we follow the snake case convention established by Unreal such as 'pelvis', `upperarm_l`, etc.
 
 ### Control rigs
 
-Coming soon…
+As it stands we are leveraging the powerful modular control rigs.
