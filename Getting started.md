@@ -47,17 +47,9 @@ Direct communication is happening through our [Discord server](https://discord.c
 
 In order to keep track of ideas and questions related to the studio, we are leveraging [GitHub Discussions](https://github.com/orgs/playsthetic/discussions). You can see it as our own private [Stack Overflow](https://stackoverflow.com/).
 
-## Social activities
+## Events and meetings
 
-We like to keep it super light on the social side and let things happen naturally. Use our curated [Google map](https://www.google.com/maps/d/viewer?mid=1nNltV1T2IXVL7NmpxB28gjIyVYfK4slX&usp=sharing) to share cool spots on the planet.
-
-## Events
-
-We register our studio events in a dedicated [Google Calendar](https://calendar.google.com). If you have not been invited, [let us know](https://discord.com/channels/473635736332271626/1025410007136731206).
-
-## File exchange
-
-For files that are not meant to be tracked on Git and are too big for Discord, we have set up a shared [Google Drive folder](https://drive.google.com/drive/folders/102jWVDGEzgV360VGnHh-r6Yl77EviAQu?usp=sharing) to which you will need to request access.
+For events and meetings we are leveraging the Discord Event system.
 
 ## Last words
 
