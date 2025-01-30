@@ -1,6 +1,6 @@
 ## Code
 
-The rule of thumb for our projects is to stay away from native C++ code unless absolutely necessary. In other words, make a native base class in C++ only when something cannot be done in script or Blueprint. When we start profiling, functions that are not performing well enough can be re-written in C++.
+The rule of thumb for our projects is to stay away from native C++ code unless absolutely necessary. In other words, make a native base class in C++ only when something cannot be done in script. When we start profiling, functions that are not performing well enough can be re-written in C++.
 
 For the most part, we match the conventions established by the existing Unreal Engine code. For instance, all symbols should be [Pascal cased](https://en.wiktionary.org/wiki/Pascal_case), like `MyFunction`. The following paragraphs are about differences and added conventions.
 
@@ -10,7 +10,9 @@ Abbreviations or acronyms are a source of [debate](https://stackoverflow.com/que
 
 ### Classes
 
-Do not prefix your classes with the game name. Our code is specifically written for the game, therefore there is no need to prefix everything with redundant information. If classes were to be reused in another project, this will save some unnecessary refactoring. In case of conflict with pre-existing engine names, be creative and find words that define your classes more precisely.
+Try to stay away from prefixing your classes with the project name. The game code is not destined to be shared across projects like plugins' code would, therefore we can spare the redundancy. If classes were to be copied in another project, this will also save us some unnecessary refactoring.
+
+In case of conflict with pre-existing engine class names, pre-fixing is acceptable, but try finding a name that define your classes more precisely first.
 
 ### Functions
 
@@ -18,10 +20,10 @@ Functions should describe an action. For this reason, they should start with a v
 
 ### Delegates
 
-For event dispatchers, also known as event dispatchers in blueprints and not to be confused with custom events, always use the `On` prefix such as `OnSomethingHappened`.
+For delegates always use the `On` prefix and past form such as `OnSomethingHappened`.
 
 > [!Info]  
-> Delegates in code are event dispatchers in Blueprint. Custom events in Blueprint are functions in code. Finally, functions are just functions.
+> Delegates in code are called event dispatchers in Blueprint. Custom events in Blueprint are called functions in code. Finally, functions are just functions.
 
 ### Engine code changes
 
@@ -33,43 +35,33 @@ For scripting, we rely on an open source project called [Unreal Engine AngelScri
 
 ## Assets
 
-Names should be [Pascal cased](https://en.wiktionary.org/wiki/Pascal_case), such as a wooden crate would be named `WoodenCrate`.
+We comply to the [type prefix convention](https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/AssetNaming/) established by Epic Games such as a grid texture would be named `T_Grid` texture. Find below a list of own custom type prefixes.
+
+| Prefix | Type                           |
+| ------ | ------------------------------ |
+| PP     | Post Process Material          |
+| PPI    | Post Process Material Instance |
 
 > [!Note]  
-> Suppressing the presence of underscores solves the eternal question of when and why they should be used.
+It is also worth mentioning that we not use the prefix `BP` for blueprints but instead use a prefix derived from their inherited code class. For example a sword actor Blueprint asset would therefore for be called `A_Sword`.
 
-Do not prefix or suffix assets with their type abbreviation, such as `SK` for skeletal meshes.
-
-> [!Note]  
-> Not using type prefixes may surprise some, as it goes against [Epic's recommendation](https://docs.unrealengine.com/4.27/ko/ProductionPipelines/AssetNaming/). That said, we find that having this information present in the name isn't quite necessary while hurting readability. Unreal's search takes types into account and displays them at all times next to the asset name. It's also worth noting that the Unreal editor itself does not comply with these official recommendations. For example, when creating a material instance, the resulting asset will be suffixed `_Inst`. When importing a skeletal mesh, the skeleton will end up suffixed with `_Skeleton`.
-
-A teapot static mesh for a kitchen could be stored in one of these two ways:
+When it comes to folder structure, a teapot static mesh for a kitchen could be stored in one of these two ways:
 
 ```
-/Game/_Kitchen/StaticMeshes/KitchenTeapot.uasset
-/Game/_Kitchen/_Teapot/TeapotStaticMesh.uasset
+/Kitchen/SKM_Kitchen_Teapot.uasset
+/Kitchen/Teapot/SKM_Kitchen_Teapot.uasset
 ```
 
-This example reveals a few important aspects of our naming convention. First off, we can see two types of folder.
-
-Namespace folders such as `_Kitchen` are in singular form and used to store related assets. These folders are always prefixed with underscores, so they can show on top when browsing assets. The last namespace is then reflected in the asset name as in `KitchenTeapot.uasset`.
-
-Grouping folders such as `SkeletalMeshes` are in plural form and are used to store assets of the same type. Generally, we are using the literal Unreal type to name these folders. Assets don't necessary have to live in a grouping folder, in which case they need to be suffixed with their type. That's the case of `TeapotStaticMesh.uasset` on the second line.
-
-If the teapot comprised two static meshes parts, we could consider one of these two configurations:
-
-```
-/Game/_Kitchen/StaticMeshes/KitchenTeapotBody.uasset  
-/Game/_Kitchen/StaticMeshes/KitchenTeapotLid.uasset  
-  
-/Game/_Kitchen/_Teapot/StaticMeshes/KitchenTeapotBody.uasset  
-/Game/_Kitchen/_Teapot/StaticMeshes/KitchenTeapotLid.uasset
-```
-
-This second example still follows the listed conventions. Take note that `TeapotBody` is Pascal cased on two last lines because `Teapot` is not a namespace in that context.
+As you can see we are aiming for unique names regardless of which folder the asset lives in.
 
 > [!Note]  
 > Even though we are putting some effort into having a logical and organized folder structure, we recommend search assets using the "Open Asset" feature (Ctrl + P). It has brilliant support for fuzzy search and will take paths and types into consideration.
+
+Finally, there is an important distinction when it comes to capitalized snake vs Pascal casing as both naming convention can coexist in an asset name.
+
+If we had two types of teapots such as an English and Japanese teapot the skeletal meshes would respectively be named `SKM_Kitchen_EnglishTeapot` and `SKM_Kitchen_JapaneseTeapot`.
+
+As you can see `EnglishTeapot` is not snake cased, that is because `English` is not an entity, the `EnglishTeapot` is the unique entity. This is an indication that we do not use folders for arbitrary grouping but solely for entity nesting.
 
 ### Blueprints
 
