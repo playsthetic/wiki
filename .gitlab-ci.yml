@@ -1,14 +1,27 @@
-image: oven/bun:latest
+image: node:lts
 
 before_script:
-  - bun install
+  - npm install
 
-pages:
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
   script:
-    - bun vitepress build
+    - npm run build
   artifacts:
     paths:
       - .vitepress/dist
+
+pages:
+  stage: deploy
+  script:
+    - mv .vitepress/dist public
+  artifacts:
+    paths:
+      - public
 
   only:
     - main

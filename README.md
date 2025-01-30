@@ -2,20 +2,20 @@
 
 ## Requirement
 
--   [Bun](https://bun.sh/) >= 1.2.1
+-   [Node.js](https://nodejs.org/) >= 22.0.0
 
 ## Development
 
 Install requirements.
 
 ```shell
-bun install
+npm install
 ```
 
 Run the live server locally.
 
 ```shell
-bun vitepress dev
+npm run dev
 ```
 
 ## Build
@@ -24,5 +24,5 @@ GitLab CI will automatically publish the pages when pushing new commits.
 That said if you want to build locally run the command below.
 
 ```shell
-bun vitepress build
+npm run build
 ```
