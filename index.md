@@ -1,25 +1,7 @@
----
-# https://vitepress.dev/reference/default-theme-home-page
-layout: home
+# Playsthetic
 
-hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
-  actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+Welcome to our wiki. Here you will find in depth information about our conventions and workflows.
 
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
----
+## Contribute
 
+You can easily contribute to this wiki by cloning this [repository](https://github.com/playsthetic/wiki) and go through the `README.md`.
