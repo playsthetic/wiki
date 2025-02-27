@@ -29,7 +29,7 @@ For delegates always use the `On` prefix and past form such as `OnSomethingHappe
 
 ### Engine code changes
 
-The engine code is added as a submodule to the project's repository. Any change to that codebase should be preceded by a `// Playsthetic` commented line. This is to simplify the [engine version migration process](/cheat-sheets/migrating-unreal-engine-version.md).
+The engine code is added as a submodule to the project's repository. Any change to that codebase should be preceded by a `// Playsthetic` commented line. This is to simplify the [engine version migration process](../cheat-sheets/migrating-unreal-engine-version).
 
 ## Scripts
 
