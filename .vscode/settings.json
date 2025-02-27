@@ -1,0 +1,4 @@
+{
+  "editor.formatOnSave": true,
+  "markdown.updateLinksOnFileMove.enabled": "prompt"
+}
