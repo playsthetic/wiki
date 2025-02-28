@@ -62,3 +62,7 @@ Sorting is disabled by default, but when enabled it will run on the GPU by defau
 
 - `Niagara.GPUSorting.CPUToGPUThreshold`
 - `Niagara.GPUCulling.CPUToGPUThreshold`
+
+## Niagara Debugger
+
+Not everything is related to performance in the [Niagara Debugger](https://dev.epicgames.com/documentation/en-us/unreal-engine/niagara-debugger-for-unreal-engine), that said it's a convenient tool to figure out the memory usage of your systems.
