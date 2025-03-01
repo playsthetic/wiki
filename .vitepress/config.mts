@@ -7,6 +7,14 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
+    search: {
+      provider: "local",
+    },
+
+    editLink: {
+      pattern: "https://github.com/playsthetic/wiki/edit/main/:path",
+    },
+
     sidebar: [
       {
         text: "Guidelines",
