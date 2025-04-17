@@ -1,11 +1,15 @@
 {
-    "dependencies": {},
+    "dependencies": {
+        "@documate/vue": "^0.2.3"
+    },
     "devDependencies": {
+        "@documate/documate": "^0.2.0",
         "vitepress": "^1.6.3"
     },
     "scripts": {
         "dev": "vitepress dev",
         "build": "vitepress build",
-        "preview": "vitepress preview"
+        "preview": "vitepress preview",
+        "documate:upload": "documate upload"
     }
 }

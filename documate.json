@@ -1,0 +1,6 @@
+{
+  "root": ".",
+  "include": ["**/*.md"],
+  "exclude": ["**/README.md", "node_modules/**/*"],
+  "backend": "https://documate.playsthetic.workers.dev/upload"
+}
