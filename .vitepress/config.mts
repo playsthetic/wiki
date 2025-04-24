@@ -42,10 +42,22 @@ export default defineConfig({
           },
         ],
       },
-      { text: "Resources", link: "../resources" },
       {
-        text: "User license agreements",
-        link: "../user-license-agreements",
+        text: "References",
+        items: [
+          {
+            text: "Chevy Ray's Pixel Fonts sizes",
+            link: "../references/chevy-rays-pixel-fonts-sizes",
+          },
+          {
+            text: "Relevant resources",
+            link: "../references/relevant-resources",
+          },
+          {
+            text: "User license agreements",
+            link: "../references/user-license-agreements",
+          },
+        ],
       },
     ],
 
