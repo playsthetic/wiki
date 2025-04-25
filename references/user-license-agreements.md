@@ -4,7 +4,7 @@ User license agreements (or ULA) is a complicated subject. But basic principles 
 
 ## Art
 
-- [Props for console](https://docs.google.com/document/d/1tNBRxfKhTqwgsrTTRD-nMbe6zew1c-u7yMaOj6vOKrI/edit) by [Thomas Feichtmeir](https://itch.io/profile/cyangmou)
+- [Animated Button Props for Consols](https://docs.google.com/document/d/1tNBRxfKhTqwgsrTTRD-nMbe6zew1c-u7yMaOj6vOKrI/edit) by [Thomas Feichtmeir](https://itch.io/profile/cyangmou)
 
 ## Fonts
 
