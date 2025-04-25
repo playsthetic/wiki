@@ -11,6 +11,7 @@ User license agreements (or ULA) is a complicated subject. But basic principles 
 - [Minecraftia](https://docs.google.com/document/d/e/2PACX-1vRZasbum7bxVI7iCptrs99OgFTM5iOtGCC4gGjlC-2g4F9Q4uRv_O8ktPBsmibUFs-Bbi2wAZo1Lyaa/pub) by Andrew Tyler
 - [Upheaval](https://blogfonts.com/upheaval-pro.font) by Brian Kent
 - [Chevy Ray's Pixel Fonts](http://pixel-fonts.com/) by [Chevy Ray Johnston](mailto:happytrash@gmail.com)
+- [Chevy Ray's Pixel Fonts Megapack](https://raw.githubusercontent.com/ChevyRay/pixel_font_megapack_license/main/LICENSE.txt) by [Chevy Ray Johnston](mailto:happytrash@gmail.com)
 
 ## Audio
 
@@ -19,6 +20,8 @@ User license agreements (or ULA) is a complicated subject. But basic principles 
 ## Software
 
 - [Unreal Engine](https://www.unrealengine.com/en-US/eula/unreal)
+- [Godot](https://godotengine.org/license/)
+- [Playdate SDK](https://play.date/dev/sdk-license/)
 - [Krita](https://krita.org/en/license/)
 - [Blender](https://www.blender.org/about/license/)
 - [Aseprite](https://www.aseprite.org/faq/#licensing-&-commercial)
