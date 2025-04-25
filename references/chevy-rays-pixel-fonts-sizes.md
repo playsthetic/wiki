@@ -2,6 +2,9 @@
 
 Size list for [Chevy Ray's Pixel Fonts](http://pixel-fonts.com/).
 
+> [!Note]
+> Fonts that aren't listed below are using a base size of 16 pixels.
+
 | Font               | Size            |
 | ------------------ | --------------- |
 | Babyblocks         | 8 ,16, 24, 32   |
