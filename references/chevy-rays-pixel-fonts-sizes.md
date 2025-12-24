@@ -2,7 +2,7 @@
 
 Size list for [Chevy Ray's Pixel Fonts](http://pixel-fonts.com/).
 
-> [!Note]
+> [!Info]
 > Fonts that aren't listed below are using a base size of 16 pixels.
 
 | Font               | Size            |
