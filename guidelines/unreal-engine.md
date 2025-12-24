@@ -131,7 +131,7 @@ More coming when they are being used more intensively.
 
 Modeling will happen in Blender with models facing `-Y`. When imported in the editor, static meshes should end up facing `Y`.
 
-> [!Ti]  
+> [!Tip]  
 > It's worth mentioning that the `Right` view should be used to see a model from the front in the editor. Not sure how much this due to legacy shananigans, but for compatibility we will obey by it.
 
 ## Skeletal meshes
