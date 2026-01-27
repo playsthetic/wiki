@@ -26,18 +26,18 @@ export default defineConfig({
         ],
       },
       {
-        text: "Cheat sheets",
+        text: "Cheat Sheets",
         items: [
           {
-            text: "Optimizing Unreal Engine materials",
+            text: "Optimizing Unreal Engine Materials",
             link: "../cheat-sheets/optimizing-unreal-engine-materials",
           },
           {
-            text: "Optimizing Niagara systems",
+            text: "Optimizing Niagara Systems",
             link: "../cheat-sheets/optimizing-niagara-systems",
           },
           {
-            text: "Unreal Engine version migration",
+            text: "Migrating Unreal Engine Version",
             link: "../cheat-sheets/migrating-unreal-engine-version",
           },
         ],
@@ -46,15 +46,15 @@ export default defineConfig({
         text: "References",
         items: [
           {
-            text: "Chevy Ray's Pixel Fonts sizes",
+            text: "Chevy Ray's Pixel Fonts Sizes",
             link: "../references/chevy-rays-pixel-fonts-sizes",
           },
           {
-            text: "Relevant resources",
+            text: "Relevant Resources",
             link: "../references/relevant-resources",
           },
           {
-            text: "User license agreements",
+            text: "User License Agreements",
             link: "../references/user-license-agreements",
           },
         ],

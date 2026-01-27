@@ -1,4 +1,4 @@
-# Chevy Ray's Pixel Fonts sizes
+# Chevy Ray's Pixel Fonts Sizes
 
 Size list for [Chevy Ray's Pixel Fonts](http://pixel-fonts.com/).
 

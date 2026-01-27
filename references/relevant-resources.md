@@ -1,4 +1,4 @@
-# Relevant resources
+# Relevant Resources
 
 ## Art
 

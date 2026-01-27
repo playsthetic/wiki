@@ -1,4 +1,4 @@
-# Optimizing Niagara systems
+# Optimizing Niagara Systems
 
 This is mostly a TLDR version of [this official page](https://dev.epicgames.com/community/learning/tutorials/15PL/unreal-engine-optimizing-niagara-scalability-and-best-practices).
 

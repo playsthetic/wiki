@@ -1,4 +1,4 @@
-# Optimizing Unreal Engine materials
+# Optimizing Unreal Engine Materials
 
 ## Draw calls
 

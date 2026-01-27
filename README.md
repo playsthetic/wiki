@@ -1,4 +1,4 @@
-# wiki
+# wiki.playshetic.com
 
 ## Requirements
 

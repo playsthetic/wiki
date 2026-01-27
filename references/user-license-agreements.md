@@ -1,4 +1,4 @@
-# User license agreements
+# User License Agreements
 
 User license agreements (or ULA) is a complicated subject. But basic principles dictate that any licensed asset that has not been made internally such as fonts, sounds, music tracks, software, plugins, or artworks should be purchased by the company and credited. The following assets can be re-used across all our projects.
 

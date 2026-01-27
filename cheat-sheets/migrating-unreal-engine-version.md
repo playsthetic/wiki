@@ -1,4 +1,4 @@
-# Migrating Unreal Engine version
+# Migrating Unreal Engine Version
 
 There are easy steps to follow when migrating to a newer engine version in order to keep things as painless as possible.
 
