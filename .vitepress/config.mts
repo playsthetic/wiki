@@ -20,9 +20,9 @@ export default defineConfig({
       {
         text: "Guidelines",
         items: [
-          { text: "Unreal Engine", link: "../guidelines/unreal-engine" },
-          { text: "Playdate", link: "../guidelines/playdate" },
-          { text: "Git", link: "../guidelines/git" },
+          { text: "Unreal Engine", link: "/guidelines/unreal-engine" },
+          { text: "Playdate", link: "/guidelines/playdate" },
+          { text: "Git", link: "/guidelines/git" },
         ],
       },
       {
@@ -30,15 +30,15 @@ export default defineConfig({
         items: [
           {
             text: "Optimizing Unreal Engine Materials",
-            link: "../cheat-sheets/optimizing-unreal-engine-materials",
+            link: "/cheat-sheets/optimizing-unreal-engine-materials",
           },
           {
             text: "Optimizing Niagara Systems",
-            link: "../cheat-sheets/optimizing-niagara-systems",
+            link: "/cheat-sheets/optimizing-niagara-systems",
           },
           {
             text: "Migrating Unreal Engine Version",
-            link: "../cheat-sheets/migrating-unreal-engine-version",
+            link: "/cheat-sheets/migrating-unreal-engine-version",
           },
         ],
       },
@@ -47,15 +47,15 @@ export default defineConfig({
         items: [
           {
             text: "Chevy Ray's Pixel Fonts Sizes",
-            link: "../references/chevy-rays-pixel-fonts-sizes",
+            link: "/references/chevy-rays-pixel-fonts-sizes",
           },
           {
             text: "Relevant Resources",
-            link: "../references/relevant-resources",
+            link: "/references/relevant-resources",
           },
           {
             text: "User License Agreements",
-            link: "../references/user-license-agreements",
+            link: "/references/user-license-agreements",
           },
         ],
       },
