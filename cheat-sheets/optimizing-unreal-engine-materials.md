@@ -16,7 +16,7 @@ To be determined how this applied to meshes rendered through Niagara systems.
 Maintaining unique materials can be difficult, as you'll want them to share a parameter interface. This can be achieved by having a layer of parametric material functions (material functions that declare parameters instead of inputs) but it might still feel like a lot of work having to build unique materials each time you are creating something new.
 
 > [!Info]  
-> A good case for a parametric function is a "uber" material function used in materials that are affecting parameters that cannot be altered on material instances (i.e. `Disable Depth Test`).
+> A good case for a parametric function is a "uber" material function used in materials that are affecting parameters that cannot be altered on material instances (e.g., `Disable Depth Test`).
 
 For this reason, the "uber" material approach make sense, and since you cannot afford to have all materials in your game paying for the cost of all the features of this giant network, you will put them behind a static switches.
 

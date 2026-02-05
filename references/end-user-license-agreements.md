@@ -1,6 +1,6 @@
-# User License Agreements
+# End User License Agreements
 
-User license agreements (or ULA) is a complicated subject. But basic principles dictate that any licensed asset that has not been made internally such as fonts, sounds, music tracks, software, plugins, or artworks should be purchased by the company and credited. The following assets can be re-used across all our projects.
+End user license agreements (a.k.a. EULA) is a complicated subject. But basic principles dictate that any licensed asset that has not been made internally such as fonts, sounds, music tracks, software, plugins, or artworks should be purchased by the company and credited. The following assets can be re-used across all our projects.
 
 ## Art
 
@@ -21,6 +21,7 @@ User license agreements (or ULA) is a complicated subject. But basic principles 
 
 - [Unreal Engine](https://www.unrealengine.com/en-US/eula/unreal)
 - [Godot](https://godotengine.org/license/)
+- [Bevy](https://raw.githubusercontent.com/bevyengine/bevy/refs/heads/main/LICENSE-MIT)
 - [Playdate SDK](https://play.date/dev/sdk-license/)
 - [Krita](https://krita.org/en/license/)
 - [Blender](https://www.blender.org/about/license/)
